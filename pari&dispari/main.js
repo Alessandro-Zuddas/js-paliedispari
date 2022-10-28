@@ -38,7 +38,7 @@ function whoHasWin(num1, num2){
 ----------------------------------------------------------------------------*/
 
 // Chiedo la scelta e un numero all'utente
-const userChoice = prompt("Scegli pari o dispari?");
+const userChoice = prompt("Scegli Pari o Dispari?");
 const userNumber = Number(prompt("Ora scegli un numero da 1 a 5!"));
 
 // Assegno un numero random alla cpu

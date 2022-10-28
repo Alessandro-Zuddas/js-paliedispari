@@ -4,3 +4,17 @@
 "use strict";
 
 const userWord = prompt("Inserisci una parola per verificare se è palindroma!");
+
+let finalWord = "";
+
+for (let i = userWord.length - 1; i >= 0; i--) {
+
+    finalWord += userWord[i];
+    
+}
+
+if(userWord === finalWord){
+    alert("La parola è palindroma!");
+}else{
+    alert("La parola non è palindroma!");
+}

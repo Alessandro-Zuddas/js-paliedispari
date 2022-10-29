@@ -38,8 +38,21 @@ function whoHasWin(num1, num2){
 ----------------------------------------------------------------------------*/
 
 // Chiedo la scelta e un numero all'utente
-const userChoice = prompt("Scegli Pari o Dispari?");
-const userNumber = Number(prompt("Ora scegli un numero da 1 a 5!"));
+let userChoice = prompt("Scegli Pari o Dispari?");
+
+while(!isNaN(userChoice)){
+
+    userChoice = prompt("Puoi inserire solo lettere!");
+
+};
+
+let userNumber = Number(prompt("Ora scegli un numero da 1 a 5!"));
+
+while(userNumber <= 0 || userNumber > 5){
+
+    userNumber = Number(prompt("Il numero deve essere compreso tra 1 e 5!"));
+
+}
 
 // Assegno un numero random alla cpu
 let cpuNumber = Math.floor(Math.random() * 5) + 1;
